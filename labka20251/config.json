@@ -1,0 +1,32 @@
+[
+  {
+    "class": "mammal",
+    "name": "Buddy",
+    "shelfLife": "365",
+    "quantity": "1",
+    "price": "100.0",
+    "manufacturer": "PetCo",
+    "age": "3",
+    "petName": "Buddy"
+  },
+  {
+    "class": "amphibian",
+    "name": "Froggy",
+    "shelfLife": "180",
+    "quantity": "2",
+    "price": "50.0",
+    "manufacturer": "NatureWorld",
+    "age": "1",
+    "habitat": "Pond"
+  },
+  {
+    "class": "enclosure",
+    "name": "Large Cage",
+    "shelfLife": "730",
+    "quantity": "1",
+    "price": "200.0",
+    "manufacturer": "ZooSupplies",
+    "type": "cage",
+    "area": "50"
+  }
+]
