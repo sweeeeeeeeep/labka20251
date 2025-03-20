@@ -136,6 +136,7 @@
     <ClCompile Include="LoadData.cpp" />
     <ClCompile Include="Mammal.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="ProductManeger.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Amphibian.h" />
@@ -145,6 +146,7 @@
     <ClInclude Include="LoadData.h" />
     <ClInclude Include="Mammal.h" />
     <ClInclude Include="Product.h" />
+    <ClInclude Include="ProductManeger.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="config.json" />

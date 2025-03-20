@@ -19,10 +19,13 @@ public:
 	virtual ~Amphibian();
 	//getters
 	std::string getHabitat() const;
+	std::string getClass() const override;
 	//setters
 	void setHabitat(const std::string& habitat);
 	//methods
 	std::string type() const override;
 	virtual std::string show() const override;
+	std::unique_ptr<Product> clone() const override;
+	product_data toJson()const override;
 };
 

@@ -1,32 +1,42 @@
 [
-  {
-    "class": "mammal",
-    "name": "Buddy",
-    "shelfLife": "365",
-    "quantity": "1",
-    "price": "100.0",
-    "manufacturer": "PetCo",
-    "age": "3",
-    "petName": "Buddy"
-  },
-  {
-    "class": "amphibian",
-    "name": "Froggy",
-    "shelfLife": "180",
-    "quantity": "2",
-    "price": "50.0",
-    "manufacturer": "NatureWorld",
-    "age": "1",
-    "habitat": "Pond"
-  },
-  {
-    "class": "enclosure",
-    "name": "Large Cage",
-    "shelfLife": "730",
-    "quantity": "1",
-    "price": "200.0",
-    "manufacturer": "ZooSupplies",
-    "type": "cage",
-    "area": "50"
-  }
+    {
+        "age": "10",
+        "class": "mammal",
+        "manufacturer": "WildLife Inc.",
+        "name": "Elephant",
+        "petName": "Dumbo",
+        "price": "5000.000000",
+        "quantity": "2",
+        "shelfLife": "365"
+    },
+    {
+        "age": "1",
+        "class": "amphibian",
+        "habitat": "Pond",
+        "manufacturer": "Nature's Best",
+        "name": "Frog",
+        "price": "10.000000",
+        "quantity": "50",
+        "shelfLife": "180"
+    },
+    {
+        "area": "500",
+        "class": "enclosure",
+        "manufacturer": "Zoo Supplies Co.",
+        "name": "Lion Enclosure",
+        "price": "15000.000000",
+        "quantity": "1",
+        "shelfLife": "730",
+        "type": "Outdoor"
+    },
+    {
+        "age": "1",
+        "class": "mammal",
+        "manufacturer": "zavod",
+        "name": "sobaka",
+        "petName": "bob",
+        "price": "123.000000",
+        "quantity": "11",
+        "shelfLife": "13"
+    }
 ]

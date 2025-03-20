@@ -90,6 +90,18 @@ std::string Product::show() const
 	return result;
 }
 
+product_data Product::toJson() const
+{
+	product_data data;
+	data["name"] = name;
+	data["shelfLife"] = std::to_string(shelfLife);
+	data["quantity"] = std::to_string(quantity);
+	data["price"] = std::to_string(price);
+	data["manufacturer"] = manufacturer;
+
+	return data;
+}
+
 
 
 

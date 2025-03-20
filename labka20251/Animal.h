@@ -21,6 +21,7 @@ public:
 
    //getters  
    int getAge() const;  
+   virtual std::string getClass() const = 0;
 
    //setters  
    void setAge(int age);  
@@ -28,5 +29,7 @@ public:
    //methods  
    virtual std::string type() const = 0;  
    virtual std::string show() const override;  
+   virtual std::unique_ptr<Product> clone() const = 0;
+   virtual product_data toJson()const;
 
 };

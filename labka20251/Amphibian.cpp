@@ -23,6 +23,11 @@ std::string Amphibian::getHabitat() const
 	return std::string(habitat);
 }
 
+std::string Amphibian::getClass() const
+{
+	return "amphibian";
+}
+
 void Amphibian::setHabitat(const std::string& habitat)
 {
 	this->habitat = habitat;
@@ -37,5 +42,18 @@ std::string Amphibian::show() const
 {
 	std::string result = Animal::show() + " Habitat: " + habitat;
 	return result;
+}
+
+std::unique_ptr<Product> Amphibian::clone() const
+{
+	return std::make_unique<Amphibian>(*this);
+}
+
+product_data Amphibian::toJson() const
+{
+	product_data data = Animal::toJson();
+	data["habitat"] = habitat;
+	data["class"] = getClass();
+	return data;
 }
 

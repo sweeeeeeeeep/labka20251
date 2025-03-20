@@ -21,12 +21,14 @@ public:
 	//getters
 	std::string getType() const;
 	int getArea() const;
+	std::string getClass() const override;
 	//setters
 	void setType(const std::string& type);
 	void setArea(int area);
 	//methods
 	virtual std::string show() const override;
-
+	std::unique_ptr<Product> clone() const override;
+	product_data toJson()const override;
 
 };
 

@@ -28,6 +28,10 @@ int Enclosure::getArea() const
 {
 	return area;
 }
+std::string Enclosure::getClass() const
+{
+	return "enclosure";
+}
 
 void Enclosure::setType(const std::string& type)
 {
@@ -43,4 +47,18 @@ std::string Enclosure::show() const
 {
 	std::string result = Product::show() + " Type: " + type + " Area: " + std::to_string(area);
 	return result;
+}
+
+std::unique_ptr<Product> Enclosure::clone() const
+{
+	return std::make_unique<Enclosure>(*this);
+}
+
+product_data Enclosure::toJson() const
+{
+	product_data data = Product::toJson();
+	data["type"] = type;
+	data["area"] = std::to_string(area);
+	data["class"] = getClass();
+	return data;
 }

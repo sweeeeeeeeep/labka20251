@@ -29,6 +29,7 @@ public:
 	int getQuantity() const;
 	double getPrice() const;
 	std::string getManufacturer() const;
+	virtual std::string getClass() const = 0;
 
 	//setters
 	void setName(const std::string& name);
@@ -39,6 +40,8 @@ public:
 
 	//methods
 	virtual std::string show() const;
+	virtual std::unique_ptr<Product> clone() const = 0;
+	virtual product_data toJson()const;
 
 
 

@@ -39,5 +39,13 @@ std::string Animal::show() const
 
 }
 
+product_data Animal::toJson() const
+{
+	
+	product_data data = Product::toJson();
+	data["age"] = std::to_string(age);
+	return data;
+}
+
 
 
